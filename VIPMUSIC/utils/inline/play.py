@@ -32,7 +32,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=f"⛦ ᴊᴏɪɴ ⛦",
-              url="https://t.me/vip_creators",
+              url="https://t.me/YARANA_TG",
             ),
         ],
     ]
@@ -93,7 +93,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"⛦ ᴊᴏɪɴ ⛦",
-              url="https://t.me/vip_creators",
+              url="https://t.me/YARANA_TG",
             ),
         ],
     ]
@@ -129,7 +129,7 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text=f"⛦ ᴊᴏɪɴ ⛦",
-              url="https://t.me/vip_creators",
+              url="https://t.me/YARANA_TG",
             ),
         ],
     ]
@@ -258,7 +258,7 @@ def queue_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=f"⛦ ᴊᴏɪɴ ⛦",
-              url="https://t.me/vip_creators",
+              url="https://t.me/YARANA_TG",
             ),
         ],
     ]
