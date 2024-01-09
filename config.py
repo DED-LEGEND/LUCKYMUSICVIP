@@ -31,15 +31,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/THE-VIP-BOY-OP/VIP-MUSIC",
+    "https://github.com/ITS-LUCKY-BOY/VIP-MUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VIP_CREATORS")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/TG_FRIENDSS")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/DX_INFO")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/YARANA_TG")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -87,21 +87,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-STATS_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
+STREAM_IMG_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
+SOUNCLOUD_IMG_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
+YOUTUBE_IMG_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/d029ed9ec453b933f072f.jpg"
 
 
 def time_to_seconds(time):
